@@ -38,18 +38,85 @@ request.onload = function() {
         var carCap = '';
         var textCap = '';
 
-        if (photosCapitulo[e].capitulo=='M') {carCap = 'carCap-M.jpg'; textCap = 'These lead photos were personally picked and curated by the author himself from among all images associated with the book, whether from the print edition or online-only photos. They were selected on the basis of exceptional photojournalism including several, award-winning World Press photos (see John Moore’s and Matthew Abbott’s photo).';} else if (photosCapitulo[e].capitulo=='I') {carCap = 'carCap-I.jpg'; textCap = 'This photo section features images from the introduction of the book of the #BlackLivesMatter / #BLM movement as well of the New York Times headquarters. Additional, online-only images related to the same themes of this chapter are also included in this photo section for the #ClimateStrike and #BLM movements.';} else if (photosCapitulo[e].capitulo=='1') {carCap = 'carCap-1.jpg'; textCap = 'This photo section features a lone image from the first chapter of East Timor. A few tables from the chapter are pending an upload and their eventual inclusion. Finally, there is a separate photo section that can be found here which has additional images showing East Timor’s plight from its 1999, tragic but successful struggle for self-determination and independence.';} else if (photosCapitulo[e].capitulo=='2') {carCap = 'carCap-2.jpg'; textCap = 'This photo section features images from the introduction of the book of the #BlackLivesMatter / #BLM movement as well of the New York Times headquarters. Additional, online-only images related to the same themes of this chapter are also included in this photo section for the #ClimateStrike and #BLM movements.';} else if (photosCapitulo[e].capitulo=='3') {carCap = 'carCap-3.jpg'; textCap = 'Chapter 3 is focused on immigration and thus has more rich and award-winning photojournalism than perhaps any other photo section or related chapter. One of the photos shot by Getty photog John Moore won a World Press award (Moore has won multiple times) for this captivating image which went viral and was featured on the cover of Time. There are other jaw-dropping images in this section too, including one by Reuters photog Adrees Latiff.';} else if (photosCapitulo[e].capitulo=='4') {carCap = 'carCap-4.jpg'; textCap = 'The photo section for chapter 4 is full of images, sometimes shot with sophisticated drone techniques, of mass movement protests stemming from the explosion of resistance and activism from all over the world in 2019 <a href="" data-toggle="modal" data-target="#readmore_chapter4">(continued...)';} else if (photosCapitulo[e].capitulo=='5') {carCap = 'carCap-5.jpg'; textCap = 'Chapter 5 on climate change, similar to Chapter 3 on immigration, is another chapter which has Word Press award-winning photos featured in it. Several shot by Matthew Abbott for the New York Times capture the horrifying moments during the Australian bushfires of 2020, widely seen by scientists as having been exacerbated to record-breaking levels by climate change <a href="" data-toggle="modal" data-target="#readmore_chapter5">(continued...)';} else if (photosCapitulo[e].capitulo=='6') {carCap = 'carCap-6.jpg'; textCap = 'This chapter and photo section features images from the recent pandemic era. A comparative case-study was undertaken in this chapter sizing up both NYT as well as Fox News coverage of the #CancelRent movement and the President Trump-inspired, #Liberate / #OperationGridlock resistance of 2020. Photos from the movement as well as the resistance can be found herein.';} else if (photosCapitulo[e].capitulo=='7') {carCap = 'carCap-7.jpg'; textCap = 'Former President Donald Trump recently announced his campaign for re-election and whether the mainstream news media will play again (or not) is what can be sized up by reading the book’s case-study of his 2016 campaign. A lone photo appearing in the book as well as a handful of online-only images, are contained in this photo section.';} else if (photosCapitulo[e].capitulo=='8') {carCap = 'carCap-8.jpg'; textCap = 'This chapter is a policy study that fully explores the ongoing crisis to professional journalism in the public policy context of the U.S.-based Federal Communications Commission (FCC) having terminated network neutrality protections during the Trump administration. There are photos from the fight to save the internet featured herein.';} else if (photosCapitulo[e].capitulo=='9') {carCap = 'carCap-9.jpg'; textCap = 'Both the #OccupyWallStreet (US and global) and #YoSoy132 (Mexico) mass resistance movements happened within a year of each other and were monumental events at the time. In particular, #OWS had some exceptional photojournalism undertaken while #YoSoy132, which didn’t garner much attention beyond its borders, had less so. Nevertheless, related photos to both movements are featured in this photo section with professional-grade photojournalism thanks to shots from photogs working for Getty, Reuters and beyond.';} else if (photosCapitulo[e].capitulo=='10') {carCap = 'carCap-10.jpg'; textCap = 'This is one of two photo sections and book chapters focusing on immigration and is thus chock full of exceptional photojournalism. Both pending online-only images and print-edition photos comprise an array of captivating and award-winning photography, including from the largest, non-election-covered, MSM-story at the turn-of-the-century, outpacing even coverage given to the O.J. Simpson trial and the death of Princess Diana: that, of course, of the Elian Gonzalez saga <a href="" data-toggle="modal" data-target="#readmore_chapter10">(continued...)';} else if (photosCapitulo[e].capitulo=='11') {carCap = 'carCap-11.jpg'; textCap = 'Chapter 11';} else if (photosCapitulo[e].capitulo=='12') {carCap = 'carCap-12.jpg'; textCap = 'Chapter 12';} else if (photosCapitulo[e].capitulo=='C') {carCap = 'carCap-C.jpg'; textCap = 'Chapter C';} else if (photosCapitulo[e].capitulo=='A') {carCap = 'carCap-A.jpg'; textCap = 'Chapter A';} else if (photosCapitulo[e].capitulo=='13') {carCap = 'carCap-13.jpg'; textCap = 'Chapter 13';} 
+        if (photosCapitulo[e].capitulo=='M') {
+          carCap = 'carCap-M.jpg'; 
+          textCap = 'These lead photos were personally picked and curated by the author himself from among all images associated with the book, whether from the print edition or online-only photos. They were selected on the basis of exceptional photojournalism including several, award-winning World Press photos (see John Moore’s and Matthew Abbott’s photo).';
+        } 
+        else if (photosCapitulo[e].capitulo=='I') {
+          carCap = 'carCap-I.jpg'; 
+          textCap = 'This photo section features images from the introduction of the book of the #BlackLivesMatter / #BLM movement as well of the New York Times headquarters. Additional, online-only images related to the same themes of this chapter are also included in this photo section for the #ClimateStrike and #BLM movements.';
+        } 
+        else if (photosCapitulo[e].capitulo=='1') {
+          carCap = 'carCap-1.jpg'; 
+          textCap = 'This photo section features a lone image from the first chapter of East Timor. A few tables from the chapter are pending an upload and their eventual inclusion. Finally, there is a separate photo section that can be found here which has additional images showing East Timor’s plight from its 1999, tragic but successful struggle for self-determination and independence.';
+        } 
+        else if (photosCapitulo[e].capitulo=='2') {
+          carCap = 'carCap-2.jpg'; 
+          textCap = 'This photo section features images from the introduction of the book of the #BlackLivesMatter / #BLM movement as well of the New York Times headquarters. Additional, online-only images related to the same themes of this chapter are also included in this photo section for the #ClimateStrike and #BLM movements.';
+        } 
+        else if (photosCapitulo[e].capitulo=='3') {
+          carCap = 'carCap-3.jpg'; 
+          textCap = 'Chapter 3 is focused on immigration and thus has more rich and award-winning photojournalism than perhaps any other photo section or related chapter. One of the photos shot by Getty photog John Moore won a World Press award (Moore has won multiple times) for this captivating image which went viral and was featured on the cover of Time. There are other jaw-dropping images in this section too, including one by Reuters photog Adrees Latiff.';
+        } 
+        else if (photosCapitulo[e].capitulo=='4') {
+          carCap = 'carCap-4.jpg'; 
+          textCap = 'The photo section for chapter 4 is full of images, sometimes shot with sophisticated drone techniques, of mass movement protests stemming from the explosion of resistance and activism from all over the world in 2019 <a href="" data-toggle="modal" data-target="#readmore_chapter4">(continued...)';
+        } 
+        else if (photosCapitulo[e].capitulo=='5') {
+          carCap = 'carCap-5.jpg'; 
+          textCap = 'Chapter 5 on climate change, similar to Chapter 3 on immigration, is another chapter which has Word Press award-winning photos featured in it. Several shot by Matthew Abbott for the New York Times capture the horrifying moments during the Australian bushfires of 2020, widely seen by scientists as having been exacerbated to record-breaking levels by climate change <a href="" data-toggle="modal" data-target="#readmore_chapter5">(continued...)';
+        } 
+        else if (photosCapitulo[e].capitulo=='6') {
+          carCap = 'carCap-6.jpg'; 
+          textCap = 'This chapter and photo section features images from the recent pandemic era. A comparative case-study was undertaken in this chapter sizing up both NYT as well as Fox News coverage of the #CancelRent movement and the President Trump-inspired, #Liberate / #OperationGridlock resistance of 2020. Photos from the movement as well as the resistance can be found herein.';
+        } 
+        else if (photosCapitulo[e].capitulo=='7') {
+          carCap = 'carCap-7.jpg'; 
+          textCap = 'Former President Donald Trump recently announced his campaign for re-election and whether the mainstream news media will play again (or not) is what can be sized up by reading the book’s case-study of his 2016 campaign. A lone photo appearing in the book as well as a handful of online-only images, are contained in this photo section.';
+        } 
+        else if (photosCapitulo[e].capitulo=='8') {
+          carCap = 'carCap-8.jpg'; 
+          textCap = 'This chapter is a policy study that fully explores the ongoing crisis to professional journalism in the public policy context of the U.S.-based Federal Communications Commission (FCC) having terminated network neutrality protections during the Trump administration. There are photos from the fight to save the internet featured herein.';
+        } 
+        else if (photosCapitulo[e].capitulo=='9') {
+          carCap = 'carCap-9.jpg'; 
+          textCap = 'Both the #OccupyWallStreet (US and global) and #YoSoy132 (Mexico) mass resistance movements happened within a year of each other and were monumental events at the time. In particular, #OWS had some exceptional photojournalism undertaken while #YoSoy132, which didn’t garner much attention beyond its borders, had less so. Nevertheless, related photos to both movements are featured in this photo section with professional-grade photojournalism thanks to shots from photogs working for Getty, Reuters and beyond.';
+        } 
+        else if (photosCapitulo[e].capitulo=='10') {
+          carCap = 'carCap-10.jpg'; 
+          textCap = 'This is one of two photo sections and book chapters focusing on immigration and is thus chock full of exceptional photojournalism. Both pending online-only images and print-edition photos comprise an array of captivating and award-winning photography, including from the largest, non-election-covered, MSM-story at the turn-of-the-century, outpacing even coverage given to the O.J. Simpson trial and the death of Princess Diana: that, of course, of the Elian Gonzalez saga <a href="" data-toggle="modal" data-target="#readmore_chapter10">(continued...)';
+        } 
+        else if (photosCapitulo[e].capitulo=='11') {
+          carCap = 'carCap-11.jpg'; 
+          textCap = 'Chapter 11';
+        } 
+        else if (photosCapitulo[e].capitulo=='12') {
+          carCap = 'carCap-12.jpg'; 
+          textCap = 'Chapter 12';
+        } 
+        else if (photosCapitulo[e].capitulo=='C') {
+          carCap = 'carCap-C.jpg'; 
+          textCap = 'Chapter C';
+        } 
+        else if (photosCapitulo[e].capitulo=='A') {
+          carCap = 'carCap-A.jpg'; 
+          textCap = 'Chapter A';
+        } 
+        else if (photosCapitulo[e].capitulo=='13') {
+          carCap = 'carCap-13.jpg'; 
+          textCap = 'Chapter 13';
+        } 
 
-        if (photosCapitulo[e].id == 1) {document.getElementById("homeGallery").innerHTML += '<div class="col-md-4 col-m"><div class="publication p-h" style="background: url(img/'+carCap+') center center no-repeat; background-size: cover;"><div class="publication-hover"><div class="publication-textCar">'+textCap+'</div></div></div></div><div class="col-md-4 col-m"><div class="publication p-h" style="background: url(img/'+photosCapitulo[e].photo+') center center no-repeat; background-size: cover;"><a href="gallery?photo='+photosCapitulo[e].id+'&capitulo='+photosCapitulo[e].capitulo+'&capituloId='+photosHome[i].capitulo+'"><div class="publication-hover"><div class="publication-title">'+photosCapitulo[e].lugar+',<br><span>'+photosCapitulo[e].fecha+'</span></div></div></a></div></div>';} else {
-
+        if (photosCapitulo[e].id == 1) {
+          document.getElementById("homeGallery").innerHTML += '<div class="col-md-4 col-m"><div class="publication p-h" style="background: url(img/'+carCap+') center center no-repeat; background-size: cover;"><div class="publication-hover"><div class="publication-textCar">'+textCap+'</div></div></div></div><div class="col-md-4 col-m"><div class="publication p-h" style="background: url(img/'+photosCapitulo[e].photo+') center center no-repeat; background-size: cover;"><a href="gallery?photo='+photosCapitulo[e].id+'&capitulo='+photosCapitulo[e].capitulo+'&capituloId='+photosHome[i].capitulo+'"><div class="publication-hover"><div class="publication-title">'+photosCapitulo[e].lugar+',<br><span>'+photosCapitulo[e].fecha+'</span></div></div></a></div></div>';
+        } 
+        else {
           document.getElementById("homeGallery").innerHTML += '<div class="col-md-4 col-m"><div class="publication p-h" style="background: url(img/'+photosCapitulo[e].photo+') center center no-repeat; background-size: cover;"><a href="gallery?photo='+photosCapitulo[e].id+'&capitulo='+photosCapitulo[e].capitulo+'&capituloId='+photosHome[i].capitulo+'"><div class="publication-hover"><div class="publication-title">'+photosCapitulo[e].lugar+',<br><span>'+photosCapitulo[e].fecha+'</span></div></div></a></div></div>';
-
         }
       }
     }
   } 
 }
-// http://localhost:8888/digitalageresistance/gallery?photo=1&capitulo=I&capituloId=1 Bacau, East Timor November 8, 1999 Erik de Castro / Reuters An East Timorese father, clutching his seven-months-old baby who has just died, arrives with other refugees in Baucau east of Dili November 8. Hundreds of East Timorese refugees from West Timor arrived in Baucau on Monday. -cover
 
 //######## INICIO FUNCION PARA GALERIA 
 function initPagina(fotoSelecc,cap,capId) {
@@ -80,31 +147,33 @@ function initPagina(fotoSelecc,cap,capId) {
        for (var e = 0; e < photosCapitulo.length; e++) {
         
 
-          if (photosCapitulo[e].print_online == 1) { // FOTOS ONLINE
+          if (photosCapitulo[e].print_online == 1) { // FOTOS SOLO ONLINE
               if (photosCapitulo[e].capitulo == 'M') {
                 var capdeM = photosCapitulo[e].photo.split('-'); 
-                var capdImagen = 'This online-only image has been thematically grouped with other images here from <b>chapter '+capdeM[0]+' </b>of the book.';
+                var capdImagen = 'This online-only image has been thematically grouped with other images contained in <b>Chapter '+capdeM[0]+' </b>of the print edition of the book.';
               } else {
-                var capdImagen = 'This online-only image has been thematically grouped with other images here from <b>chapter '+photosCapitulo[e].capitulo+' </b>of the book.';
+                var capdImagen = 'This online-only image has been thematically grouped with other images contained in <b>Chapter '+photosCapitulo[e].capitulo+' </b>of the print edition of the book.';
               }
               var imageOnline = 'Online-only ';
-            } else if (photosCapitulo[e].print_online == 0) { // FOTOS DE LIBRO
+          } 
+          else if (photosCapitulo[e].print_online == 0) { // FOTOS DE LIBRO
               if (photosCapitulo[e].capitulo == 'M') {
                 var capdeM = photosCapitulo[e].photo.split('-'); 
-                var capdImagen = 'This image is contained in <b>Chapter '+capdeM[0]+' </b>';
+                var capdImagen = 'This image is contained in <b>Chapter '+capdeM[0]+' </b>of the print edition of the book.';
               } else {
-                var capdImagen = 'This image is contained in <b>Chapter '+photosCapitulo[e].capitulo+'</b>';
+                var capdImagen = 'This image is contained in <b>Chapter '+photosCapitulo[e].capitulo+' </b>of the print edition of the book.';
               }
               var imageOnline = '';
-            } else if (photosCapitulo[e].print_online == 2) { // FOTOS DONADAS
-              if (photosCapitulo[e].capitulo == 'M') {
-                var capdeM = photosCapitulo[e].photo.split('-'); 
-                var capdImagen = 'This image is contained in <b>Chapter '+capdeM[0]+' </b>';
-              } else {
-                var capdImagen = 'This image is contained in <b>Chapter '+photosCapitulo[e].capitulo+'</b>';
-              }
-              var imageOnline = '';
+          }
+          else if (photosCapitulo[e].print_online == 2) { // FOTOS DONADAS
+            if (photosCapitulo[e].capitulo == 'M') {
+              var capdeM = photosCapitulo[e].photo.split('-'); 
+              var capdImagen = 'This image is contained in <b>Chapter '+capdeM[0]+' </b>of the print edition of the book.';
+            } else {
+              var capdImagen = 'This image is contained in <b>Chapter '+photosCapitulo[e].capitulo+' </b>of the print edition of the book.';
             }
+            var imageOnline = '';
+        }
 
          //###### carrusel por capitulo
           if (cap == photosCapitulo[e].capitulo) {
