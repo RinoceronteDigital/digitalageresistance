@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Git 1 - Digital-Age Resistance</title>
+    <title>Git 2 - Digital-Age Resistance</title>
 
     <meta name="robots" content="Follow">
     <meta name="googlebot" content="Follow, Index">
