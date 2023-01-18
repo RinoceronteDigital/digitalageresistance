@@ -1,0 +1,293 @@
+/*
+ * Globals
+ */
+@import url('https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&display=swap');
+
+/* Links */
+a,
+a:focus,
+a:hover {
+  color: #fff;
+}
+
+
+/*
+ * Base structure
+ */
+
+html,
+body {
+  height: 100%;
+  background-color: none;
+  font-family: 'PT Sans', sans-serif;
+}
+
+.main-cover {
+  margin-top: -150px!important;
+}
+@media (min-width: 768px) {
+  .main-cover {
+    margin-top: -100px;
+  }
+}
+
+.cover-container-1 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-color: rgba(0, 0, 0, 1.0);
+  background-image: url('../img/portada-1.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-2 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-2.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-3 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-3.jpg?v=2.1');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-4 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-4.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-5 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-5.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-6 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-6.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-7 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-7.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-8 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-8.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-9 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-9.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-10 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-10.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-11 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-11.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-12 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-12.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-13 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-13.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-14 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-14.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+.cover-container-15 {
+  color: #fff;
+  text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+  box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+
+  background-image: url('../img/portada-15.jpg');
+  background-position: center center;
+  background-repeat: none;
+  background-size: cover;
+}
+
+.btn-text-chapter {
+  font-size: 0.7rem;
+}
+@media (min-width: 768px) {
+  .btn-text-chapter {
+    font-size: 1rem;
+  }
+}
+
+/*
+ * Header
+ */
+.masthead {
+  margin-bottom: 2rem;
+}
+.lead {
+  font-size: 1rem;
+  font-weight: 300;
+}
+.masthead-brand {
+
+  }
+  .nav-masthead {
+    float: right;
+  }
+
+.masthead-brand {
+  margin-bottom: 0;
+  text-align: left;
+  font-size: 1rem;
+  font-weight: 700;
+}
+@media (min-width: 768px) {
+  .masthead-brand {
+    max-width: 100%;
+  }
+}
+
+.masthead-brand span {
+  font-weight: 400;
+  font-size: 0.8rem;
+}
+
+@media (min-width: 768px) {
+  .nav-masthead {
+    float: right;
+  }
+  .masthead-brand {
+    margin-bottom: 0;
+    text-align: left;
+    font-size: 1.5rem;
+    font-weight: 700;
+  }
+  .masthead-brand span {
+    font-weight: 400;
+    font-size: 1.1rem;
+  }
+  .lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+}
+}
+
+.nav-masthead .nav-link {
+  padding: .25rem 0;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 1);
+}
+
+.nav-masthead .nav-link:hover,
+.nav-masthead .nav-link:focus {
+
+}
+
+.nav-masthead .nav-link + .nav-link {
+  margin-left: 1rem;
+}
+
+.nav-masthead .active {
+  color: #ccc;
+}
+
+
+
+/*
+ * Cover
+ */
+.cover {
+  padding: 0 1.5rem;
+}
+.cover .btn-lg {
+  padding: .75rem 1.25rem;
+  font-weight: 700;
+}
+
+
+/*
+ * Footer
+ */
+.mastfoot {
+  color: rgba(255, 255, 255, .5);
+}
+
+.btn-home .inner {
+  padding: 8px;
+  background-color: rgba(0, 0, 0, 0.6);
+  text-align: center;
+}
