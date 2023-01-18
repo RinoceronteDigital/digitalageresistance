@@ -38,6 +38,7 @@ request.onload = function() {
         var carCap = '';
         var textCap = '';
 
+        // TEXTOS PARA HOME CUADROS 
         if (photosCapitulo[e].capitulo=='M') {
           carCap = 'carCap-M.jpg'; 
           textCap = 'These lead photos were personally picked and curated by the author himself from among all images associated with the book, whether from the print edition or online-only photos. They were selected on the basis of exceptional photojournalism including several, award-winning World Press photos (see John Moore’s and Matthew Abbott’s photo).';
@@ -197,25 +198,6 @@ function initPagina(fotoSelecc,cap,capId) {
 
             var ultimaFotoCapituloAnterior = 0;
             var primerafotoCapituloSiguiente = 1;
-
-            /*prevCap = Number(photosPagina[i].capitulo) - 1;
-                prevCapId = prevCap - 1;
-                prevCapitulolibro = Number(photosPagina[prevCapId].photos[0].capitulo);
-                nextCap = Number(photosPagina[i].capitulo) + 1;
-                nextCapId = nextCap - 1;
-                nextCapitulolibro = Number(photosPagina[nextCapId].photos[0].capitulo);
-                prevPhoto = Number(photosCapitulo[e].id) - 1;
-                nextPhoto = Number(photosCapitulo[e].id) + 1;
-                ultimaFotoCapituloAnterior = Number(photosPagina[prevCapId].photos.length);
-                primerafotoCapituloSiguiente = 1;
-                console.log('prevCap '+prevCap);
-                console.log('prevCapitulolibro '+prevCapitulolibro);
-                console.log('nextCap '+nextCap);
-                console.log('nextCapitulolibro '+nextCapitulolibro);
-                console.log('prevPhoto '+prevPhoto);
-                console.log('nextPhoto '+nextPhoto);
-                console.log('ultimaFotoCapituloAnterior '+ultimaFotoCapituloAnterior);
-                console.log('primerafotoCapituloSiguiente '+primerafotoCapituloSiguiente);*/
 
             if (photosPagina[i].capitulo==1) {
               // ### BLOQUE DE FOTOS INICIO
@@ -522,31 +504,141 @@ function initPagina(fotoSelecc,cap,capId) {
               // ### BLOQUE DE FOTOS FIN
             }
 
-            
-
-        
-
-
-
-            //document.getElementById("textlab").innerHTML = 'Fotos en total en el capitulo: ' +photosCapitulo.length+', Capitulo Id: '+photosPagina[i].capitulo+', Num de Foto: '+photosCapitulo[e].id+' . Prev Foto: '+prevPhoto+', Prev Capitulo: '+prevCap+' / Next Foto: '+nextPhoto+', Next Capitulo: '+nextCap+', Prev Cap Lib: '+prevCapitulolibro+', Next Cap Lib: '+nextCapitulolibro;
-
             var ajusteFoto = '';
-            if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 40%;';} else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 25%;';} else if (photosCapitulo[e].id == 6 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 63%;';} else if (photosCapitulo[e].id == 7 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 8 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 11 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 15%;';} else if (photosCapitulo[e].id == 13 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 30%;';} else if (photosCapitulo[e].id == 15 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 30%;';} else if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 'I') {ajusteFoto = 'background-position-x: 30%;';} else if (photosCapitulo[e].id == 14 && photosCapitulo[e].capitulo == 'M') {ajusteFoto = 'background-position-x: 35%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 'I') {ajusteFoto = 'background-position-x: 28%;';} else if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 2) {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 3) {ajusteFoto = 'background-position-x: 63%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 3) {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 4 && photosCapitulo[e].capitulo == 3) {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 6 && photosCapitulo[e].capitulo == 3) {ajusteFoto = 'background-position-x: 45%;';} else if (photosCapitulo[e].id == 8 && photosCapitulo[e].capitulo == 3) {ajusteFoto = 'background-position-x: 25%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 4) {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 4) {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 4) {ajusteFoto = 'background-position-x: 35%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 5) {ajusteFoto = 'background-position-x: 40%;';} else if (photosCapitulo[e].id == 4 && photosCapitulo[e].capitulo == 5) {ajusteFoto = 'background-position-x: 25%;';} else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 5) {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 6 && photosCapitulo[e].capitulo == 5) {ajusteFoto = 'background-position-x: 30%;';} else if (photosCapitulo[e].id == 8 && photosCapitulo[e].capitulo == 5) {ajusteFoto = 'background-position-x: 20%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 6) {ajusteFoto = 'background-position-x: 15%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 6) {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 7) {ajusteFoto = 'background-position-x: 30%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 8) {ajusteFoto = 'background-position-x: 45%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 9) {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 9) {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 10) {ajusteFoto = 'background-position-x: 75%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 12) {ajusteFoto = 'background-position-x: 60%;';} else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 'C') {ajusteFoto = 'background-position-x: 35%;';} else if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 'C') {ajusteFoto = 'background-position-x: 70%;';} else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 'C') {ajusteFoto = 'background-position-x: 25%;';} else {ajusteFoto = '';}
+            if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 40%;';
+            } 
+            else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 25%;';
+            } 
+            else if (photosCapitulo[e].id == 6 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 63%;';
+            } 
+            else if (photosCapitulo[e].id == 7 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 8 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 11 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 15%;';
+            } 
+            else if (photosCapitulo[e].id == 13 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 30%;';
+            } 
+            else if (photosCapitulo[e].id == 15 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 30%;';
+            } 
+            else if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 'I') {
+              ajusteFoto = 'background-position-x: 30%;';
+            } 
+            else if (photosCapitulo[e].id == 14 && photosCapitulo[e].capitulo == 'M') {
+              ajusteFoto = 'background-position-x: 35%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 'I') {
+              ajusteFoto = 'background-position-x: 28%;';
+            } 
+            else if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 2) {
+              //ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 3) {
+              ajusteFoto = 'background-position-x: 63%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 3) {
+              ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 4 && photosCapitulo[e].capitulo == 3) {
+              ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 6 && photosCapitulo[e].capitulo == 3) {
+              ajusteFoto = 'background-position-x: 45%;';
+            } 
+            else if (photosCapitulo[e].id == 8 && photosCapitulo[e].capitulo == 3) {
+              ajusteFoto = 'background-position-x: 25%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 4) {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 4) {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 4) {
+              ajusteFoto = 'background-position-x: 35%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 5) {
+              ajusteFoto = 'background-position-x: 40%;';
+            } 
+            else if (photosCapitulo[e].id == 4 && photosCapitulo[e].capitulo == 5) {
+              ajusteFoto = 'background-position-x: 25%;';
+            } 
+            else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 5) {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 6 && photosCapitulo[e].capitulo == 5) {
+              ajusteFoto = 'background-position-x: 30%;';
+            } 
+            else if (photosCapitulo[e].id == 8 && photosCapitulo[e].capitulo == 5) {
+              ajusteFoto = 'background-position-x: 20%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 6) {
+              ajusteFoto = 'background-position-x: 15%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 6) {
+              ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 7) {
+              ajusteFoto = 'background-position-x: 30%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 8) {
+              ajusteFoto = 'background-position-x: 45%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 9) {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 5 && photosCapitulo[e].capitulo == 9) {
+              ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 10) {
+              ajusteFoto = 'background-position-x: 75%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 12) {
+              ajusteFoto = 'background-position-x: 60%;';
+            } 
+            else if (photosCapitulo[e].id == 1 && photosCapitulo[e].capitulo == 'C') {
+              ajusteFoto = 'background-position-x: 35%;';
+            } 
+            else if (photosCapitulo[e].id == 2 && photosCapitulo[e].capitulo == 'C') {
+              ajusteFoto = 'background-position-x: 70%;';
+            } 
+            else if (photosCapitulo[e].id == 3 && photosCapitulo[e].capitulo == 'C') {
+              ajusteFoto = 'background-position-x: 25%;';
+            } 
+            else {
+              ajusteFoto = '';
+            }
 
             document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
+
             var imagenDescarga1 = photosCapitulo[e].photo.split('.');
+
             var imagenDescraga2 = imagenDescarga1[0];
+            
             document.getElementById("icondownload").innerHTML = '<a href="img/'+photosCapitulo[e].photocover+'" download="'+imagenDescraga2+'" style="color:#fff" title="Download LoRes Photo"><i class="fa-solid fa-download" style="color:#fff"></i></a>';
+            
             document.getElementById("foto-inner").innerHTML = '<div class="carousel-inner"><a href="photo-hr?photo='+photosCapitulo[e].id+'&capitulo='+photosCapitulo[e].capitulo+'&capituloId='+photosPagina[i].capitulo+'" target="_blank"><div class="carousel-item-gallery " style="background-image: url(img/'+photosCapitulo[e].photocover+');background-repeat: no-repeat;background-position: center;'+ajusteFoto+'background-size: cover;"><div class="container"><div class="carousel-caption text-left"></div></div></div></a></div><a href="gallery?photo='+prevPhoto+'&capitulo='+prevCapitulolibro+'&capituloId='+prevCap+'"><button class="carousel-control-prev" type="button" data-target="#myCarousel" data-slide="prev"><span class="carousel-control-prev-icon" aria-hidden="true"></span><span class="sr-only">Previous</span></button></a><a href="gallery?photo='+nextPhoto+'&capitulo='+nextCapitulolibro+'&capituloId='+nextCap+'"><button class="carousel-control-next" type="button" data-target="#myCarousel" data-slide="next"><span class="carousel-control-next-icon" aria-hidden="true"></span><span class="sr-only">Next</span></button></a>';
 
             document.getElementById("foto-titulo").innerHTML = photosCapitulo[e].lugar;
+
             document.getElementById("foto-author").innerHTML = 'Photo by<br>'+photosCapitulo[e].fotografo;
             //document.getElementById("foto-fecha").innerHTML = photosCapitulo[e].fecha;
+            
             document.getElementById("foto-descripcion").innerHTML = '<b><u>Image '+photosCapitulo[e].seccion+', '+photosCapitulo[e].lugar+', '+photosCapitulo[e].fecha+'</u></b>: '+photosCapitulo[e].descripcion;
             
-            /*if (photosCapitulo[e].capitulo == 'M') {var capdeM = photosCapitulo[e].photo.split('-'); var capdImagen = capdeM[0];} else {var capdImagen = photosCapitulo[e].capitulo;}*/
-
             document.getElementById("foto-capitulo").innerHTML = capdImagen;
+            
             document.getElementById("foto-extracto").innerHTML = photosCapitulo[e].extracto;
           }
           //##### Datos de la foto end
