@@ -26,7 +26,15 @@ request.onload = function() {
   homeGallery(datosf);
 }
   function bookHeader(jsonObj) {
+    if (jsonObj['titleWeb'] == '') {
+      document.getElementById("titleWeb").innerHTML = jsonObj['book'];
+    } else {
+      document.getElementById("titleWeb").innerHTML = jsonObj['titleWeb'];
+    }
     document.getElementById("book").innerHTML = jsonObj['book']+'<br><span>'+jsonObj['caption']+'<br><em>by '+jsonObj['author']+'</em></span>';
+    document.getElementById("blockHomeuno").innerHTML = jsonObj['blockHomeuno'];
+    document.getElementById("blockHomedos").innerHTML = jsonObj['blockHomedos'];
+    document.getElementById("blockHometres").innerHTML = jsonObj['blockHometres'];
   }
   function homeGallery(jsonObj) {
     const photosHome = jsonObj['capitulos'];
@@ -620,7 +628,7 @@ function initPagina(fotoSelecc,cap,capId) {
               ajusteFoto = '';
             }
 
-            if (photosCapitulo[e].lugar == '') {
+            if (photosCapitulo[e].titlePage == '') {
               document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
             } else {
               document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].titlePage;
@@ -683,7 +691,7 @@ function initPhotoHr(fotoSelecc,cap,capId) {
           //##### Datos de la foto start
           if (photosPagina[i].capitulo == capId && photosCapitulo[e].id == fotoSelecc) {
 
-            if (photosCapitulo[e].lugar == '') {
+            if (photosCapitulo[e].titlePage == '') {
               document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
             } else {
               document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].titlePage;

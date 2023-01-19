@@ -8,7 +8,7 @@
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
 
-    <title>Digital-Age Resistance</title>
+    <title id="titleWeb"></title>
 
     <meta name="robots" content="Follow">
     <meta name="googlebot" content="Follow, Index">
@@ -80,12 +80,11 @@ $versionPortada = rand(1, 14);
 
 <section class="jumbotron text-center">
     <div class="container-lg container-fluid">
-      <p class="lead text-muted">In this trailblazing book, social movements, the mainstream news media and public policy are tackled in order to arm readers with an "intellectual self-defense" of the reign of trillion-dollar-valued platform conglomerates, reality TV presidencies of the past and present, the pandemic and the Biden administration. Firmly situated at the intersection of journalism, activism and the deployment of power, the author places his analysis within an international context that further develops a critical paradigm, called the media dependence model (MDM).
-<br><br>
-Featuring a foreword by Daniel and Noam Chomsky and a preface by Robert W. McChesney, the book offers a cutting-edge overview of the news media landscape both within the United States and globally. The MDM critically analyzes dichotomous patterns of mainstream press coverage of the #ClimateStrike, #FamiliesBelongTogether, #EvasionMasiva (Chile), #FightForHongKong, #RickyRenuncia (Puerto Rico) and #CancelRent movements and the pro-Trump #liberate resistance, contrasting them with social media and other historic movements. "Evergreen" topics such as immigration, climate change and net neutrality are explored in depth, along with media reforms and concrete policy solutions.
-<br><br>
+      <p class="lead text-muted" id="blockHomeuno"></p>
+      <br><p class="lead text-muted" id="blockHomedos"></p>
+<br>
 <span id="showGallery"></span>
-The book straddles disciplines including media, policy and journalism studies, political economy and international and political communication. It is a must-read for scholars, students, policy advisers, media makers, social media enthusiasts, grassroots activists, NGOs and concerned citizens alike.</p>
+<p class="lead text-muted" id="blockHometres"></p>
     </div>
   </section>
 
@@ -173,7 +172,7 @@ Interrupted by the pandemic, the movement has recently managed to insert itself 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/4aba989b05.js"></script>
     <script src="js/swiper-dar.js"></script>
-    <script src="js/custom.js?v=9.8.6"></script>
+    <script src="js/custom.js?v=9.9.3"></script>
 
 <script>
   initPhotoHome();
