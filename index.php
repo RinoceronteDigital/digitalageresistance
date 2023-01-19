@@ -173,7 +173,7 @@ Interrupted by the pandemic, the movement has recently managed to insert itself 
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/4aba989b05.js"></script>
     <script src="js/swiper-dar.js"></script>
-    <script src="js/custom.js?v=9.8.5"></script>
+    <script src="js/custom.js?v=9.8.6"></script>
 
 <script>
   initPhotoHome();

@@ -10,7 +10,7 @@ for ($i = 1; $i <= 17; $i++) {
     echo '{"capitulo": "'.$i.'","photos": [';
     $e=1;
     while ($info = mysqli_fetch_array($busca)) {
-      echo '{"id": "'.$e.'","capitulo": "'.$info['capitulo_libro'].'","seccion": "'.$info['seccion'].'","photo": "'.$info['photo'].'","photocover": "'.$info['photocover'].'","lugar": "'.$info['lugar'].'","fecha": "'.$info['fecha'].'","fotografo": "'.$info['fotografo'].'","descripcion": "'.$info['descripcion'].'","link": "'.$info['link'].'","extracto": "'.$info['extracto'].'","print_online": "'.$info['print_online'].'"}';
+      echo '{"id": "'.$e.'","capitulo": "'.$info['capitulo_libro'].'","seccion": "'.$info['seccion'].'","photo": "'.$info['photo'].'","photocover": "'.$info['photocover'].'","titlePage": "'.$info['title_page'].'","lugar": "'.$info['lugar'].'","fecha": "'.$info['fecha'].'","fotografo": "'.$info['fotografo'].'","descripcion": "'.$info['descripcion'].'","link": "'.$info['link'].'","extracto": "'.$info['extracto'].'","print_online": "'.$info['print_online'].'"}';
         echo ',';
       $e++;
     }

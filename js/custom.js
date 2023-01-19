@@ -15,7 +15,7 @@ function closeNav() {
 }
 
 function initPhotoHome() {
-const requestURL = 'js/data-photos-b-4.json';
+const requestURL = 'js/data-photos-b-5.json';
 const request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
@@ -121,7 +121,7 @@ request.onload = function() {
 
 //######## INICIO FUNCION PARA GALERIA 
 function initPagina(fotoSelecc,cap,capId) {
-  const requestURL = 'js/data-photos-b-4.json';
+  const requestURL = 'js/data-photos-b-5.json';
   const request = new XMLHttpRequest();
   request.open('GET', requestURL);
   request.responseType = 'json';
@@ -620,8 +620,12 @@ function initPagina(fotoSelecc,cap,capId) {
               ajusteFoto = '';
             }
 
-            document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
-
+            if (photosCapitulo[e].lugar == '') {
+              document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
+            } else {
+              document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].titlePage;
+            }
+            
             var imagenDescarga1 = photosCapitulo[e].photo.split('.');
 
             var imagenDescraga2 = imagenDescarga1[0];
@@ -655,7 +659,7 @@ function initPagina(fotoSelecc,cap,capId) {
 
 //######## INICIO FUNCION PARA GALERIA 
 function initPhotoHr(fotoSelecc,cap,capId) {
-  const requestURL = 'js/data-photos-b-4.json';
+  const requestURL = 'js/data-photos-b-5.json';
   const request = new XMLHttpRequest();
   request.open('GET', requestURL);
   request.responseType = 'json';
@@ -679,7 +683,11 @@ function initPhotoHr(fotoSelecc,cap,capId) {
           //##### Datos de la foto start
           if (photosPagina[i].capitulo == capId && photosCapitulo[e].id == fotoSelecc) {
 
-            document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
+            if (photosCapitulo[e].lugar == '') {
+              document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].lugar+' / '+photosCapitulo[e].fecha+' / '+photosCapitulo[e].fotografo;
+            } else {
+              document.getElementById("tituloPagina").innerHTML = photosCapitulo[e].titlePage;
+            }
 
             document.getElementById("foto-hr").innerHTML = '<div class="carousel-inner"><div class="carousel-item-gallery " style="background-image: url(img/'+photosCapitulo[e].photocover+');background-repeat: no-repeat;background-position: center;background-size: contain;"><div class="container"><div class="carousel-caption text-left"></div></div></div></div>';
 

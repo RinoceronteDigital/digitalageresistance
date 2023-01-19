@@ -52,7 +52,7 @@ $capitulo_id_get = $_REQUEST['capituloId'];
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/4aba989b05.js"></script>
     <script src="js/swiper-dar.js"></script>
-    <script src="js/custom.js?v=9.8.1"></script>
+    <script src="js/custom.js?v=9.8.6"></script>
     <script>
       $(document).ready(function() {
       initPhotoHr(<?php echo $photo_get; ?>,'<?php echo $capitulo_get; ?>',<?php echo $capitulo_id_get; ?>);
